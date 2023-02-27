@@ -49,9 +49,9 @@ export default {
 <template>
     <div class="sections">
         <ul>
-            <li v-for="section in sections" :key="section.label">
+            <li v-for="section, index in sections" :key="section.label">
                 <div class="section">
-                    <img :src="getImage(section.productImg)" alt="Section Icon">
+                    <img :src="getImage(section.productImg)" alt="Section Icon" :id="(index == 3) ? 'measure' : ''">
                     <span> {{ section.label }}</span>
                 </div>
             </li>
@@ -63,7 +63,6 @@ export default {
 .sections {
     background-color: #0182f9;
     display: flex;
-    justify-content: center;
     justify-content: center;
     padding: 1rem 4rem;
 }
@@ -93,6 +92,10 @@ ul {
         }
 
     }
+}
+
+#measure {
+    width: 10px;
 }
 
 // li:nth-child(4) img {
