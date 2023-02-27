@@ -149,11 +149,13 @@ export default {
         <div class="links-container">
             <div class="left-side">
                 <ul>
+                    <li>DC COMICS</li>
                     <li v-for="link in dcComics">
                         <a :href="link.link">{{ link.label }}</a>
                     </li>
                 </ul>
                 <ul>
+                    <li>SHOP</li>
                     <li v-for="link in shopLinks">
                         <a :href="link.link">{{ link.label }}</a>
                     </li>
@@ -161,11 +163,13 @@ export default {
             </div>
             <div class="right-side">
                 <ul>
+                    <li>DC</li>
                     <li v-for="link in dcLinks">
                         <a :href="link.link">{{ link.label }}</a>
                     </li>
                 </ul>
                 <ul>
+                    <li>SITES</li>
                     <li v-for="link in siteLinks">
                         <a :href="link.link">{{ link.label }}</a>
                     </li>
@@ -179,6 +183,8 @@ export default {
 .links-container {
     display: flex;
     gap: 2rem;
+    background-image: url(../assets/img/footer-bg.jpg);
+    padding: 5rem 5rem;
 }
 
 .right-side {
@@ -200,10 +206,17 @@ ul {
     list-style-type: none;
 
     li {
+        color: white;
+
         a {
-            color: black;
+            color: white;
             text-decoration: none;
         }
     }
+}
+
+li:first-child {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 </style>
