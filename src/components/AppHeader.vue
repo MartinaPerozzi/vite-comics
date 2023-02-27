@@ -77,7 +77,7 @@ export default {
         <div class="right-side">
             <ul>
                 <li v-for="link in headerLinks" :key="link.label">
-                    <a :href="link.link"></a> {{ link.label }}
+                    <a :href="link.link"> {{ link.label }}</a>
                 </li>
             </ul>
         </div>
@@ -90,7 +90,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 1rem 7rem;
+
+    img {
+        width: 70%;
+        min-width: 50px;
+    }
 }
 
 ul {
@@ -103,10 +108,10 @@ ul {
         text-transform: uppercase;
         font-family: 'Titillium Web', sans-serif;
         font-weight: 600;
-        color: rgb(36, 36, 36);
 
         a {
             text-decoration: none;
+            color: rgb(36, 36, 36);
         }
     }
 }

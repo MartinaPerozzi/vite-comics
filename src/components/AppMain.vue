@@ -1,7 +1,15 @@
 <script>
-
+export default {}
 </script>
 
-<template></template>
+<template>
+    <h1> -->Content goes here--> </h1>
+</template>
 
-<style scoped></style>
+<style scoped>
+h1 {
+    background-color: rgb(26, 26, 26);
+    padding: 2rem 4rem;
+    color: white;
+}
+</style>
