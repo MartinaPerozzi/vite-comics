@@ -70,7 +70,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header class="container">
         <div class="left-side">
             <img :src=getImage(logo) alt="Logo">
         </div>
@@ -90,7 +90,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 7rem;
+    padding: 1rem 0rem;
 
     img {
         width: 70%;

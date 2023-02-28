@@ -130,14 +130,13 @@ export default {
                 },
             ],
 
-
         };
 
     },
 
     methods: {
         getImage(name) {
-            return new URL(`../assets/img/${name}.png`, import.meta.url).href;
+            return new URL(`../assets/img/${name}`, import.meta.url).href;
         }
     },
 }
@@ -147,33 +146,35 @@ export default {
 <template>
     <footer>
         <div class="links-container">
-            <div class="left-side">
-                <ul>
-                    <li>DC COMICS</li>
-                    <li v-for="link in dcComics">
-                        <a :href="link.link">{{ link.label }}</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>SHOP</li>
-                    <li v-for="link in shopLinks">
-                        <a :href="link.link">{{ link.label }}</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="right-side">
-                <ul>
-                    <li>DC</li>
-                    <li v-for="link in dcLinks">
-                        <a :href="link.link">{{ link.label }}</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>SITES</li>
-                    <li v-for="link in siteLinks">
-                        <a :href="link.link">{{ link.label }}</a>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="left-side">
+                    <ul>
+                        <li>DC COMICS</li>
+                        <li v-for="link in dcComics">
+                            <a :href="link.link">{{ link.label }}</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>SHOP</li>
+                        <li v-for="link in shopLinks">
+                            <a :href="link.link">{{ link.label }}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-side">
+                    <ul>
+                        <li>DC</li>
+                        <li v-for="link in dcLinks">
+                            <a :href="link.link">{{ link.label }}</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>SITES</li>
+                        <li v-for="link in siteLinks">
+                            <a :href="link.link">{{ link.label }}</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
@@ -184,14 +185,38 @@ export default {
     display: flex;
     gap: 2rem;
     background-image: url(../assets/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 5rem 5rem;
+    position: relative;
+
+    .container {
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+
+    }
+}
+
+.links-container:before {
+    content: "";
+    background-image: url(../assets/img/dc-logo-bg.png);
+    position: absolute;
+    background-size: 41%;
+    background-repeat: no-repeat;
+    bottom: 0;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+
 }
 
 .right-side {
     display: flex;
     justify-content: center;
     align-content: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .left-side {

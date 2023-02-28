@@ -35,7 +35,6 @@ export default {
 
     },
 
-
     methods: {
         getImage(type) {
             return new URL(`../assets/img/${type}`, import.meta.url).href;
@@ -64,20 +63,22 @@ export default {
     background-color: #0182f9;
     display: flex;
     justify-content: center;
-    padding: 1rem 4rem;
+    padding: 2rem 4rem;
 }
 
 ul {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 4rem;
     list-style-type: none;
     align-items: center;
+    justify-content: center;
 
     li {
         text-transform: uppercase;
         color: white;
         font-size: 0.9rem;
+        width: 12%;
 
         .section {
             display: flex;
@@ -86,7 +87,6 @@ ul {
             img {
                 width: 23%;
                 min-width: 50px;
-                max-width: 70px;
                 margin-right: 1rem;
             }
         }
@@ -97,8 +97,4 @@ ul {
 #measure {
     width: 10px;
 }
-
-// li:nth-child(4) img {
-//     max-width: 10px;
-// }
 </style>

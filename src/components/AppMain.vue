@@ -3,13 +3,22 @@ export default {}
 </script>
 
 <template>
-    <h1> -->Content goes here--> </h1>
+    <div class="bg">
+        <div class="container">
+            <h1> -->Content goes here--> </h1>
+        </div>
+    </div>
 </template>
 
 <style scoped>
-h1 {
+.bg {
+
     background-color: rgb(26, 26, 26);
-    padding: 2rem 4rem;
+}
+
+h1 {
+    padding: 2rem 2rem;
     color: white;
+    font-weight: 600;
 }
 </style>
