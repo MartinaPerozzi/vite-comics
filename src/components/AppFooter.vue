@@ -202,10 +202,10 @@ export default {
     content: "";
     background-image: url(../assets/img/dc-logo-bg.png);
     position: absolute;
-    background-size: 41%;
+    background-size: 40%;
     background-repeat: no-repeat;
     bottom: 0;
-    left: 11%;
+    left: 20%;
     width: 100%;
     height: 100%;
     background-position: center;
