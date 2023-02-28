@@ -1,5 +1,6 @@
 <script>
 import AppMainCards from "./AppMainCards.vue";
+
 export default {
     data() {
         return {
@@ -85,15 +86,13 @@ export default {
 
 <template>
     <div class="bg">
-
         <AppMainCards :cards="mainCards" />
-
     </div>
 </template>
 
 <style scoped>
 .bg {
-    padding: 3rem;
+    padding: 1.5rem;
     background-color: rgb(26, 26, 26);
 }
 

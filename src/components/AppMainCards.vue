@@ -1,8 +1,18 @@
 <script>
+import AppButton from "./AppButton.vue";
 export default {
+    data() {
+        return {
+            loadButton: "LOAD MORE",
+        }
+    },
+
     props: {
         cards: Array,
     },
+
+    components: { AppButton },
+
 }
 </script>
 
@@ -19,6 +29,7 @@ export default {
                     </div>
                 </li>
             </ul>
+            <AppButton :buttonText="loadButton" />
         </div>
 
 
@@ -26,12 +37,19 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .thumbs {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     width: calc (100% % 6);
     list-style-type: none;
+    padding-bottom: 1.5rem;
 
     li {
         max-width: 200px;
