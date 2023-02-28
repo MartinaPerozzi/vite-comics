@@ -1,16 +1,18 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppJumbotron from './components/AppJumbotron.vue';
 import AppMain from './components/AppMain.vue';
 import AppSections from './components/AppSections.vue';
 import AppFooter from './components/AppFooter.vue';
 import FooterSocial from './components/FooterSocial.vue';
 export default {
-  components: { AppHeader, AppMain, AppSections, AppFooter, FooterSocial }
+  components: { AppHeader, AppMain, AppSections, AppFooter, FooterSocial, AppJumbotron }
 };
 </script>
 
 <template>
   <AppHeader />
+  <AppJumbotron />
   <AppMain />
   <AppSections />
   <AppFooter />
@@ -19,7 +21,6 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;900&display=swap');
-
 
 * {
   box-sizing: border-box;

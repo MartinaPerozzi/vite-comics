@@ -66,7 +66,6 @@ export default {
 }
 
 </script>
-
 <template>
     <header class="container">
         <div class="left-side">

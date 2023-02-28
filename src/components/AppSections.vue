@@ -59,8 +59,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/_variable.scss' as *;
+
 .sections {
-    background-color: #0182f9;
+    background-color: $primary;
     display: flex;
     justify-content: center;
     padding: 2rem 4rem;
