@@ -205,7 +205,7 @@ export default {
     background-size: 41%;
     background-repeat: no-repeat;
     bottom: 0;
-    opacity: 0.7;
+    left: 11%;
     width: 100%;
     height: 100%;
     background-position: center;
