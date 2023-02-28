@@ -6,127 +6,127 @@ export default {
             dcComics: [
                 {
                     label: "Characters",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Comics",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Movies",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Tv",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Games",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Collectible",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Videos",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Fans",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "News",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
             ],
             shopLinks: [
                 {
                     label: "Shop DC",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "Shop DC Collectibles",
-                    link: "#",
+                    url: "#",
                 },
             ],
             dcLinks: [
                 {
                     label: "Term of Use",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "Privacy Policy (New)",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "Ad Choices",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "Advertising",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "Jobs",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "Subscriptions",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "Talent Workshops",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "CPSC Certificates",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "Ratings",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "Shop Help",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "Conact Us",
-                    link: "#",
+                    url: "#",
                 },
 
             ],
             siteLinks: [
                 {
                     label: "DC",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "MAD Magazine",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "DC Kids",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "DC Universe",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "DC Power Visa",
-                    link: "#",
+                    url: "#",
                 },
             ],
 
@@ -151,13 +151,13 @@ export default {
                     <ul>
                         <li>DC COMICS</li>
                         <li v-for="link in dcComics">
-                            <a :href="link.link">{{ link.label }}</a>
+                            <a :href="link.url">{{ link.label }}</a>
                         </li>
                     </ul>
                     <ul>
                         <li>SHOP</li>
                         <li v-for="link in shopLinks">
-                            <a :href="link.link">{{ link.label }}</a>
+                            <a :href="link.url">{{ link.label }}</a>
                         </li>
                     </ul>
                 </div>
@@ -165,13 +165,13 @@ export default {
                     <ul>
                         <li>DC</li>
                         <li v-for="link in dcLinks">
-                            <a :href="link.link">{{ link.label }}</a>
+                            <a :href="link.url">{{ link.label }}</a>
                         </li>
                     </ul>
                     <ul>
                         <li>SITES</li>
                         <li v-for="link in siteLinks">
-                            <a :href="link.link">{{ link.label }}</a>
+                            <a :href="link.url">{{ link.label }}</a>
                         </li>
                     </ul>
                 </div>

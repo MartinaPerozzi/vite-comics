@@ -6,27 +6,27 @@ export default {
                 {
                     productImg: "buy-comics-digital-comics.png",
                     label: "Digital Comics",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     productImg: "buy-comics-merchandise.png",
                     label: "DS Merchandise",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     productImg: "buy-comics-subscriptions.png",
                     label: "Subscriptions",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     productImg: "buy-comics-shop-locator.png",
                     label: "Comic Shop Locator",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     productImg: "buy-dc-power-visa.svg",
                     label: "Dc Power Visa",
-                    link: "#",
+                    url: "#",
                 },
 
             ]

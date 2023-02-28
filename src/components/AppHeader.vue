@@ -11,53 +11,51 @@ export default {
                 },
                 {
                     label: "Comics",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Movies",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Tv",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Games",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Collectible",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Videos",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Fans",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "News",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
                 {
                     label: "Shop",
-                    link: "#",
+                    url: "#",
                     active: false,
                 },
             ]
-
         };
-
     },
 
     methods: {
@@ -77,7 +75,7 @@ export default {
         <div class="right-side">
             <ul>
                 <li v-for="link in headerLinks" :key="link.label">
-                    <a :href="link.link"> {{ link.label }}</a>
+                    <a :href="link.url"> {{ link.label }}</a>
                 </li>
             </ul>
         </div>

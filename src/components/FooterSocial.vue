@@ -6,26 +6,25 @@ export default {
             socialLinks: [
                 {
                     label: "footer-facebook.png",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "footer-twitter.png",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "footer-periscope.png",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "footer-pinterest.png",
-                    link: "#",
+                    url: "#",
                 },
                 {
                     label: "footer-youtube.png",
-                    link: "#",
+                    url: "#",
                 },
             ],
-
 
         };
 
