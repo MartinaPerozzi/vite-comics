@@ -46,13 +46,13 @@ export default {
 .thumbs {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
-    width: calc (100% % 6);
     list-style-type: none;
-    padding-bottom: 1.5rem;
 
     li {
         max-width: 200px;
+        padding-bottom: 2rem;
     }
 }
 
@@ -72,6 +72,6 @@ export default {
     font-size: 1rem;
     text-transform: uppercase;
     color: white;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
 </style>

@@ -35,7 +35,7 @@ export default {
         font-size: 1.4rem;
         font-weight: 600;
         top: 355px;
-        left: 260px;
+        left: 10%;
 
     }
 

@@ -92,7 +92,7 @@ export default {
 
 <style scoped>
 .bg {
-    padding: 1.5rem;
+    padding: 1.5rem 0rem 0.5rem 0rem;
     background-color: rgb(26, 26, 26);
 }
 

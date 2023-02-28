@@ -224,7 +224,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 ul {
